@@ -183,3 +183,137 @@
 # print("Misol 1: boshlangich=1, qadam=2, soni=5")
 # for x in arifmetik_progressiya_generator(1, 2, 5):
 #     print(x)
+
+###
+# nums = [1, 2, 3, 4]
+#
+# it = iter(nums)
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+###
+# def my_generator():
+#     yield 1
+#     yield 2
+#     yield 3
+#
+# gen = my_generator()
+#
+# for i in gen:
+#     print(i)
+
+###
+# def squares(n):
+#     for i in range(1, n + 1):
+#         yield i
+#
+# for kvadrat in squares(5):
+#     print(kvadrat)
+
+###
+# def char_generator(s):
+#     for i in s:
+#         yield i
+#
+# for harf in char_generator('Salom'):
+#     print(harf)
+
+###
+# def infinite_counter():
+#     i = 1
+#     while True:
+#         yield i
+#         i += 1
+#
+# gen = infinite_counter()
+#
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+
+###
+# def juft_sonlar(n):
+#     for i in range(1, 1+n):
+#         yield i
+#
+# for son in juft_sonlar(9):
+#     if son % 2 == 0:
+#         print(son)
+
+###
+# def fibbonaci():
+#     a, b = 0, 1
+#     while True:
+#         yield a
+#         a, b = b, a + b
+#
+# gen = fibbonaci()
+#
+# for _ in range(10):
+#     print(next(gen))
+
+###
+# class WordIterator:
+#     def __init__(self, text):
+#         self.word = text.split()
+#         self.index = 0
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.index < len(self.word):
+#             word = self.word[self.index]
+#             self.index += 1
+#             return word
+#         else:
+#             raise StopIteration
+
+
+###
+# def digit_in_string(text):
+#     for char in text:
+#         if char.isdigit():
+#             yield char
+#
+# text = 'asd124jdfds324q'
+#
+# for raqam in digit_in_string(text):
+#     print(raqam)
+
+###
+# class MyEnumerate:
+#     def __init__(self, data):
+#         self.data = data
+#         self.index = 0
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.index < len(self.data):
+#             result = (self.index, self.data[self.index])
+#             return result
+#         else:
+#             raise StopIteration
+#
+# it = MyEnumerate(['a', 'b', 'c'])
+#
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+###
+# def infinity_fibonacci():
+#     a, b = 0, 1
+#     while True:
+#         yield a
+#         a, b = b, a + b
+#
+# gen = infinity_fibonacci()
+#
+# for _ in range(10):
+#     print(next(gen))
